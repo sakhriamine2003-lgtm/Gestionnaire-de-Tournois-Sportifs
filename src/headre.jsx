@@ -24,15 +24,18 @@ export function Headre() {
 
       </div>
 
-      <div className="flex justify-center mt-6 bg-white ">
+      <div className="flex justify-center mt-6 bg-white 
+ ">
         <input
           type="search"
-          placeholder="Search..."
-          className="w-80 p-3 rounded-xl  outline-none"
+          placeholder="Search... "
+          className="w-80 p-3  font-bold  outline-none  text-center "
         />
-        <button className="w-[35px] animate-bounce"> <img src="https://cdn-icons-png.flaticon.com/128/15761/15761178.png" alt="logo" /> </button>
+        <button className="w-[35px] animate-bounce "> <img src="https://cdn-icons-png.flaticon.com/128/15761/15761178.png" alt="logo" /> </button>
       </div>
 
     </div>
   );
 }
+
+
