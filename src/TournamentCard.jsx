@@ -5,15 +5,18 @@ import { Detail } from "./Detail";
 export function TournamentCard() {
 
   const [selectedTournament, setSelectedTournament] = useState(null);
+          
+
 
   return (
     <>
       {tournamentData.map((tournament) => (
 
+
         <section
           key={tournament.id}
           onClick={() => setSelectedTournament(tournament)}
-          className="bg-white w-[95%] rounded-[10px] mx-auto mt-6 shadow-xl cursor-pointer"
+          className="bg-white w-[95%] rounded-[10px] mx-auto mt-6 shadow-xl cursor-pointer "
         >
 
           <div className="flex">

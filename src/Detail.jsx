@@ -17,9 +17,7 @@ export function Detail({ tournament }) {
   }
 
   return (
-<div className="bg-gradient-to-b from-indigo-500 to-purple-600 p-5 ">
-
-      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-[98%] ">
+<div className="fixed bottom-0 w-full p-5 bg-gradient-to-b from-indigo-500 to-purple-600 shadow-xl z-30 pt" >      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-[98%] ">
 
         <div className="bg-gradient-to-b from-indigo-500 to-purple-600 text-white p-5">
 
