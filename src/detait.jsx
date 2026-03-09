@@ -1,4 +1,4 @@
-export function AffichageDetaille() {
+export function AffichageDetaille({ tournament }) {
   return (
     <div className="bg-gray-100 flex justify-center items-center">
 
@@ -11,36 +11,26 @@ export function AffichageDetaille() {
           </h2>
 
           <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
-              🎾
-            </div>
+            <img
+              className="w-12 h-12 rounded-xl"
+              src={tournament.participants[tournament.participants.length - 1].avatar}
+              alt="logo"
+            />
 
             <div>
-              <h3 className="font-semibold">Shuttle Masters League</h3>
+              <h3 className="font-semibold">{tournament.title}</h3>
 
               <span className="text-xs bg-green-400 text-white px-2 py-1 rounded-full">
-                On Going
+                {tournament.status}
               </span>
             </div>
           </div>
 
           <div className="mt-4 text-sm">
-            <p>👥 24/32 Participants • Public</p>
-            <p>🏆 Single Elimination</p>
-            <p>📅 October 12, 2025</p>
-            <p>📍 Badminton Hall 1</p>
-          </div>
-
-          <div className="bg-white/20 mt-5 rounded-full flex justify-between p-1 text-sm">
-            <button className="flex-1 text-center py-1">Info</button>
-
-            <button className="flex-1 bg-white text-black rounded-full py-1">
-              Participants
-            </button>
-
-            <button className="flex-1 text-center py-1">
-              Bracket
-            </button>
+            <p>👥 {tournament.participantsCount} Participants • {tournament.type}</p>
+            <p>🏆 {tournament.format}</p>
+            <p>📅 {tournament.date}</p>
+            <p>📍 {tournament.location}</p>
           </div>
 
         </div>
