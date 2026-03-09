@@ -1,8 +1,11 @@
-export function AffichageDetaille({ tournament }) {
-  return (
-    <div className="bg-gray-100 flex justify-center items-center">
+export function Detail({ tournament }) {
 
-      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-full">
+  if (!tournament) return null;
+
+  return (
+    <div className="bg-gray-100 flex justify-center items-center mt-10">
+
+      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-[95%]">
 
         <div className="bg-gradient-to-b from-indigo-500 to-purple-600 text-white p-5">
 
@@ -11,6 +14,7 @@ export function AffichageDetaille({ tournament }) {
           </h2>
 
           <div className="flex items-center gap-3">
+
             <img
               className="w-12 h-12 rounded-xl"
               src={tournament.participants[tournament.participants.length - 1].avatar}
@@ -24,6 +28,7 @@ export function AffichageDetaille({ tournament }) {
                 {tournament.status}
               </span>
             </div>
+
           </div>
 
           <div className="mt-4 text-sm">

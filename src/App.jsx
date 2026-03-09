@@ -1,16 +1,15 @@
-import { TournamentCard } from "./TournamentCard.jsx";
-import { Headre } from "./headre.jsx";
-import { Footer } from "./Nav.jsx";
-
+import { TournamentCard } from "./TournamentCard";
+import { Headre } from "./headre";
+import { Footer } from "./Nav";
 
 function App() {
   return (
-      <>
-      <Headre/> 
-      <TournamentCard/>
-      <Footer/>
-      </>
+    <>
+      <Headre />
+      <TournamentCard />
+      <Footer />
+    </>
   );
-} 
+}
 
 export default App;
