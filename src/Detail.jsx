@@ -1,7 +1,5 @@
 export function Detail({ tournament }) {
 
-  if (!tournament) return null;
-
   return (
     <div className="bg-gray-100 flex justify-center items-center mt-10">
 
