@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { tournamentData } from "./data/tournamentDB";
 import { Detail } from "./Detail";
+import { MyButton } from "./Ajoutercards";
 
 export function TournamentCard() {
 
-  const [selectedTournament, setSelectedTournament] = useState(null);
-          
-
+  const [Val1Tournament, Val2Tournament] = useState(null);
 
   return (
     <>
@@ -15,7 +14,7 @@ export function TournamentCard() {
 
         <section
           key={tournament.id}
-          onClick={() => setSelectedTournament(tournament)}
+          onClick={() => Val2Tournament(tournament)}
           className="bg-white w-[95%] rounded-[10px] mx-auto mt-6 shadow-xl cursor-pointer "
         >
 
@@ -50,15 +49,15 @@ export function TournamentCard() {
               <p>📅 {tournament.date}</p>
               <p>📍 {tournament.location}</p>
             </div>
-
           </div>
+          <MyButton/>
+
 
         </section>
 
       ))}
-
-      {selectedTournament && (
-        <Detail tournament={selectedTournament} />
+      {Val1Tournament && (
+        <Detail tournament={Val1Tournament} />
       )}
     </>
   );
