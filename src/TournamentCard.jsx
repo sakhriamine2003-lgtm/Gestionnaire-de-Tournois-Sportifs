@@ -32,9 +32,6 @@ export function TournamentCard() {
               <div>
                 <h2 className="font-bold text-lg">{tournament.title}</h2>
 
-                <p className="bg-blue-600 text-white p-1 rounded-[15px] w-fit">
-                  {tournament.status}
-                </p>
               </div>
 
             </div>

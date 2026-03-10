@@ -6,14 +6,9 @@ export function Detail({ tournament }) {
   if (!tournament) return null;
 
   function ParticipantStatus({ status }) {
-    const isConfirmed = status.toLowerCase() === "confirmed";
+    const isConfirmed = status === "confirmed";
     return (
-      <span
-      
-      >
-        {status}
-      </span>
-    );
+      <span> {status} </span>);
   }
 
   return (
@@ -49,14 +44,9 @@ export function Detail({ tournament }) {
           <div className="bg-white/20 mt-5 rounded-full flex justify-between p-1 text-sm">
             {["Info", "Participants", "Bracket"].map((tab) => (
               <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`flex-1 py-1 rounded-full ${
-                  activeTab === tab ? "bg-white text-black font-semibold" : "text-white"
-                }`}
+                className={`flex-1 py-1 rounded-full bg-white text-black font-semibold" : "text-white"}`}
               >
-                {tab}
-              </button>
+                {tab}</button>
             ))}
           </div>
         </div>
