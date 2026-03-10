@@ -7,7 +7,7 @@ export function MyButton() {
     <button
       onClick={(e) => {
         e.stopPropagation();       
-        setIsRegistered(!isRegistered); 
+        setIsRegistered(!isRegistered); UR
       }}
       className={`p-4 w-full text-white ${
         isRegistered ? "bg-red-500" : "bg-green-600"
