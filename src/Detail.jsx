@@ -10,7 +10,6 @@ export function Detail({ tournament }) {
     return (
       <span> {status} </span>);
   }
-
   return (
 <div className="fixed bottom-0 w-full p-5 bg-gradient-to-b from-indigo-500 to-purple-600 shadow-xl z-30 pt" >      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-[98%] ">
 
@@ -44,10 +43,20 @@ export function Detail({ tournament }) {
           <div className="bg-white/20 mt-5 rounded-full flex justify-between p-1 text-sm">
             {["Info", "Participants", "Bracket"].map((tab) => (
               <button
-                className={`flex-1 py-1 rounded-full bg-white text-black font-semibold" : "text-white"}`}
+              onClick={() => setActiveTab(tab) }
+                className={`flex-1 py-1 rounded-full bg-white text-black font-semibold" : "text-white  ${
+                    activeTab === tab
+               ? "bg-orange-100 text-black font-semibold"
+              : "text-white"
+                }
+                  
+                  "}`}
+              
               >
                 {tab}</button>
             ))}
+            
+              
           </div>
         </div>
 
