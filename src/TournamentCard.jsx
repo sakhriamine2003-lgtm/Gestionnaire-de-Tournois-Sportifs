@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { tournamentData } from "./data/tournamentDB";
 import { Detail } from "./Detail";
-import { MyButton } from "./Ajoutercards";
+import { MyButton } from "./Button";
 
 export function TournamentCard() {
 
