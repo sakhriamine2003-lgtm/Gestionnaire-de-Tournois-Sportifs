@@ -14,6 +14,7 @@ export function Detail({ tournament }) {
 <div className="fixed bottom-0 h-full w-full p-5 bg-gradient-to-b from-indigo-500 to-purple-600 shadow-xl z-30 pt" >      <div className="bg-white rounded-3xl overflow-hidden shadow-xl w-[98%] ">
 
         <div className="bg-gradient-to-b from-indigo-500 to-purple-600 text-white p-5">
+          <a href="/"><img className="w-5" src="https://cdn-icons-png.flaticon.com/128/8213/8213500.png" alt="log" /></a>
 
           <h2 className="text-center text-lg font-semibold mb-4">Tournament</h2>
 
