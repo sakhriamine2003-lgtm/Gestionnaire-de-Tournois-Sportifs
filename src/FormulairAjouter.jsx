@@ -1,10 +1,5 @@
-import { useState } from "react";
 
-export function MyButton() {
-  const [version1, version2] = useState(false);
-
-
-
+export  function FormulairAjouter() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
 
@@ -46,4 +41,4 @@ export function MyButton() {
 
 </div>
 
-  )};
+  )}
