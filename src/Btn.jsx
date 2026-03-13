@@ -1,22 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react';
 
 function Btn() {
-    const [test ,settext] =useState(null)
+  const [name, methode] = useState("Ajouter"); 
 
-      const handleClick = () => {
-    settext(prev => prev === "Ajouter" ? "Participants" : "Ajouter");}; 
+
 
   return (
     <div>
-        <button
-          type="button"
-          onClick={handleClick}
-          className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
-        > {test}
-        </button>
+      <button
+      onClick={methode}
+        type="button"
+        className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600">
+        {name}
+      </button>
     </div>
-  )
+  );
 }
 
-export default Btn
+export default Btn;

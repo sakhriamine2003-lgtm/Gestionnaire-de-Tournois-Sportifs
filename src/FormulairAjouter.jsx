@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Btn from "./Btn";
 
 export function FormulairAjouter() {
   const [nom, setnom] = useState("");
@@ -19,7 +18,7 @@ export function FormulairAjouter() {
       onClick={(e) => {
         e.stopPropagation();
       }}
-      className="flex justify-center items-center  bg-gray-100 "
+      className="flex justify-center items-center min-h-screen bg-gray-100 rel t-0"
     >
       <form className="bg-white p-6 rounded-xl shadow-md w-96 space-y-4">
         <h2 className="text-xl font-bold text-center">LES PARTICIPENT</h2>
@@ -57,14 +56,20 @@ export function FormulairAjouter() {
           />
         </div>
 
-       
+        <button
+          type="button"
+          onClick={handleAjouter}
+          className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
+        >
+          Ajouter
+        </button>
 
-        <Btn onClick={handleAjouter} />
-        <Btn/>
-
-
-
-    
+        <button
+          type="button"
+          className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
+        >
+          Participants
+        </button>
       </form>
     </div>
   );
