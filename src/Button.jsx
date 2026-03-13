@@ -1,22 +1,25 @@
 import { useState } from "react";
-import {FormulairAjouter} from "./FormulairAjouter";
+import { FormulairAjouter } from "./FormulairAjouter";
 
-export function MyButton() {
-  const [isRegistered, setIsRegistered] = useState(false);
+export default function Button() {
+  const [show, setShow] = useState(false);
 
   return (
     <div className="flex flex-col items-center">
 
       <button
-        onClick={() => setIsRegistered(!isRegistered)}
+        onClick={(e) => {
+          e.stopPropagation();
+          setShow(!show);
+        }}
+
         className={`p-4 w-60 text-white ${
-          isRegistered ? "bg-red-500" : "bg-green-600"
-        }`}
-      >
-        {isRegistered ? "Se désinscrire" : "S'inscrire"}
+          
+        show ? "bg-red-500" : "bg-green-600"}`}>
+        {show ? "Se désinscrire" : "S'inscrire"}
       </button>
 
-      {isRegistered && <FormulairAjouter />}
+      {show && <FormulairAjouter />}
 
     </div>
   );

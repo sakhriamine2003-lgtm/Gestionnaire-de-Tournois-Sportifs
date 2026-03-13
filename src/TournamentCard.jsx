@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { tournamentData } from "./data/tournamentDB";
 import { Detail } from "./Detail";
-import { MyButton } from "./Button";
+import  Button  from "./Button";  
 
 export function TournamentCard() {
 
@@ -50,7 +50,7 @@ export function TournamentCard() {
               <p>📍 {tournament.location}</p>
             </div>
           </div>
-          <MyButton/>
+          <Button/>
 
 
         </section>
