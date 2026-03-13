@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Participant from "./Participant";
 
 export function Detail({ tournament }) {
   const [activeTab, setActiveTab] = useState("Participants");   
@@ -93,7 +94,9 @@ export function Detail({ tournament }) {
                       <p className="font-semibold">{p.name}</p>
                       <ParticipantStatus status={p.status} />
                     </div>
+                     <>{Participant}</>
                   </div>
+                 
                 ))}
               </div>
             </div>

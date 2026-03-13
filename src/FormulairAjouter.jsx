@@ -18,7 +18,7 @@ export function FormulairAjouter() {
       onClick={(e) => {
         e.stopPropagation();
       }}
-      className="flex justify-center items-center min-h-screen bg-gray-100 rel t-0"
+      className="flex justify-center items-center min-h-screen bg-gray-100 "
     >
       <form className="bg-white p-6 rounded-xl shadow-md w-96 space-y-4">
         <h2 className="text-xl font-bold text-center">LES PARTICIPENT</h2>
