@@ -17,5 +17,4 @@ function Participant({ nom, equipe, niveau }) {
     </div>
   );
 }
-
 export default Participant;
