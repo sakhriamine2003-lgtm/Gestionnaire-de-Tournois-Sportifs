@@ -1,11 +1,8 @@
 import React from "react";
 
- function Participant({ nom, equipe, niveau, id }) {
+function Participant({ nom, equipe, niveau }) {
   return (
-    <div
-      key={id}
-      className="flex items-center gap-3 p-3 rounded-lg bg-green-50"
-    >
+    <div className="flex items-center gap-3 p-3 rounded-lg bg-green-50">
       <img
         src="https://cdn-icons-png.flaticon.com/128/219/219970.png"
         alt="logo"
