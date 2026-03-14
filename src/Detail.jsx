@@ -91,13 +91,23 @@ export function Detail({ tournament }) {
                       className="w-10 h-10 rounded-full object-cover"
                     />
                     <div>
-                      <p className="font-semibold">{p.name}</p>
+                      <p className="font-semibold"> {p.name}</p>
                       <ParticipantStatus status={p.status} />
                     </div>
                      <>{Participant}</>
                   </div>
+
+
+
+))}
+
+            
+
+
+
+
                  
-                ))}
+               
               </div>
             </div>
           )}

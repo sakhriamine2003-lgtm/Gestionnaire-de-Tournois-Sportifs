@@ -1,25 +1,24 @@
-import React from 'react'
-import { FormulairAjouter } from './FormulairAjouter'
+import React from "react";
 
-export function Participant(nom ,equipe ,niveau ,id) {
+ function Participant({ nom, equipe, niveau, id }) {
   return (
-    <div>
-        <div
-                    key={id}
-                    className="flex items-center gap-3 p-3 rounded-lg"
-                  >
-                    <div>
-                      <p className="font-semibold">{nom}</p>
-                      <p className="font-semibold">{equipe}</p>
-                      <p className="font-semibold">{niveau}</p>
-                    </div>
-                  </div>
+    <div
+      key={id}
+      className="flex items-center gap-3 p-3 rounded-lg bg-green-50"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/128/219/219970.png"
+        alt="logo"
+        className="w-10 h-10 rounded-full object-cover"
+      />
 
-      
+      <div>
+        <p className="font-semibold">{nom}</p>
+        <p className="font-semibold">{equipe}</p>
+        <p className="font-semibold">{niveau}</p>
+      </div>
     </div>
-    
-  )
+  );
 }
 
-
-export default Participant
+export default Participant;
