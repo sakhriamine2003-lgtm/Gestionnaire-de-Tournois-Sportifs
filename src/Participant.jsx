@@ -15,6 +15,10 @@ function Participant({ nom, equipe, niveau }) {
         <p className="font-semibold">{niveau}</p>
       </div>
     </div>
+    
   );
+
 }
 export default Participant;
+
+

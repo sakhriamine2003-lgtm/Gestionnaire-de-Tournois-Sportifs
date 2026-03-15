@@ -57,7 +57,7 @@ export function FormulairAjouter() {
         </div>
 
         <button
-          type="button"
+type="submit"
           onClick={handleAjouter}
           className="w-full bg-green-500 text-white py-2 rounded-lg hover:bg-green-600"
         >

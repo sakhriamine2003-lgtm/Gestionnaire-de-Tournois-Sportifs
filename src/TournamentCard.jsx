@@ -20,11 +20,7 @@ export function TournamentCard() {
 
           <div className="flex">
 
-            <img
-              className="w-[60px] h-[60px] m-6 rounded-[15px]"
-              src={tournament.participants[tournament.participants.length - 1].avatar}
-              alt="logo"
-            />
+        
 
             <div className="flex gap-4 m-6 items-center">
 
@@ -44,7 +40,6 @@ export function TournamentCard() {
             <div className="w-[89%] mx-auto rounded-full h-[1px] bg-black/50 mt-4"></div>
 
             <div className="mx-6 py-4">
-              <p>👥 {tournament.participantsCount} Participants · {tournament.type}</p>
               <p>🏆 {tournament.format}</p>
               <p>📅 {tournament.date}</p>
               <p>📍 {tournament.location}</p>
