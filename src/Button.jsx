@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { FormulairAjouter } from "./FormulairAjouter";
+import { FormulairAjouter  } from "./FormulairAjouter";
 
-export default function Button() {
+export default function Button({setParticipants ,participants}) {
   const [show, setShow] = useState(false);
 
   return (
@@ -19,8 +19,7 @@ export default function Button() {
         {show ? "Se désinscrire" : "S'inscrire"}
       </button>
 
-      {show && <FormulairAjouter />}
-
+      {show && <FormulairAjouter setParticipants={setParticipants} participants ={participants}/>}
     </div>
   );
 }

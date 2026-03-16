@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Participant from "./Participant";
 
-export function Detail({ tournament }) {
+export function Detail({ tournament, participants }) {
   const [activeTab, setActiveTab] = useState("Info");
 
   return (
@@ -57,7 +57,9 @@ export function Detail({ tournament }) {
           {activeTab === "Participants" && (
             <div>
               <h4 className="font-semibold mb-2">Participent :</h4>
-              <Participant/>
+              {participants.map((participant) => (
+                <Participant participant={participant} />
+              ))}
             </div>
           )}
 

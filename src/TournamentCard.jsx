@@ -6,6 +6,7 @@ import  Button  from "./Button";
 export function TournamentCard() {
 
   const [Val1Tournament, Val2Tournament] = useState(null);
+  const [participants ,setParticipants] = useState([]);
 
   return (
     <>
@@ -45,14 +46,17 @@ export function TournamentCard() {
               <p>📍 {tournament.location}</p>
             </div>
           </div>
-          <Button/>
+          <Button setParticipants ={setParticipants}   participants ={participants}  />
 
 
         </section>
 
       ))}
       {Val1Tournament && (
-        <Detail tournament={Val1Tournament} />
+        <Detail tournament={Val1Tournament} 
+        participants ={participants} 
+        
+        />
       )}
     </>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Participant({ nom, equipe, niveau }) {
+function Participant({participant}) {
   return (
     <div className="flex items-center gap-3 p-3 rounded-lg bg-green-50">
       <img
@@ -10,9 +10,9 @@ function Participant({ nom, equipe, niveau }) {
       />
 
       <div>
-        <p className="font-semibold">{nom}</p>
-        <p className="font-semibold">{equipe}</p>
-        <p className="font-semibold">{niveau}</p>
+        <p className="font-semibold">{participant.nom}</p>
+        <p className="font-semibold">{participant.equipe}</p>
+        <p className="font-semibold">{participant.niveau}</p>
       </div>
     </div>
     

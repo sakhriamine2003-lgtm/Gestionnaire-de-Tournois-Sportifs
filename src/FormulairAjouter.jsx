@@ -1,13 +1,14 @@
 import { useState } from "react";
 
-export function FormulairAjouter() {
+export function FormulairAjouter({setParticipants,participants}) {
   const [nom, setnom] = useState("");
   const [equipe, setequipe] = useState("");
   const [niveau, setniveau] = useState("");
 
   const handleAjouter = (e) => {
     e.preventDefault();
-    console.log("Participant ajouté :", { nom, equipe, niveau });
+    setParticipants([ ...participants, {nom , equipe , niveau}])
+    // console.log("Participant ajouté :", { nom, equipe, niveau });
     setnom("");
     setequipe("");
     setniveau("");
